@@ -1,16 +1,16 @@
-const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: ['babel-loader'],
       },
       {
         test: /\.css$/,
@@ -18,29 +18,29 @@ const config = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              hmr: process.env.NODE_ENV === "development",
-              reloadAll: true
-            }
+              hmr: process.env.NODE_ENV === 'development',
+              reloadAll: true,
+            },
           },
-          "css-loader"
-        ]
-      }
-    ]
+          'css-loader',
+        ],
+      },
+    ],
   },
   resolve: {
-    extensions: ["*", ".js"]
+    extensions: ['*', '.js'],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: "./public/index.html"
-    })
+      template: './public/index.html',
+    }),
   ],
   output: {
-    path: path.resolve(__dirname, "..", "dist"),
-    publicPath: "/",
-    filename: "bundle.js"
-  }
+    path: path.resolve(__dirname, '..', 'dist'),
+    publicPath: process.env.NODE_ENV === 'production' ? '/my-profile/' : '/',
+    filename: 'bundle.js',
+  },
 };
 
 module.exports = config;
