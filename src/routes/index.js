@@ -1,15 +1,15 @@
-import Home from "./home/Home";
-import NotFound from "./not-found/NotFound";
+import Home from './home/Home';
+import NotFound from './not-found/NotFound';
 
 const routes = [
   {
-    path: "/",
+    path: '/my-profile',
     component: Home,
-    exact: true
+    exact: true,
   },
   {
-    component: NotFound
-  }
+    component: NotFound,
+  },
 ];
 
 export default routes;
