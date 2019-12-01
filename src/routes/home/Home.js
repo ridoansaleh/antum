@@ -1,6 +1,8 @@
 import React from 'react';
 import Profile from './Profile';
 import Description from './Description';
+import Skill from './Skill';
+import Hobby from './Hobby';
 import { PageWrapper, Content } from './styles/_homeStyle';
 
 function Home() {
@@ -9,6 +11,8 @@ function Home() {
       <Content>
         <Profile />
         <Description />
+        <Skill />
+        <Hobby />
       </Content>
     </PageWrapper>
   );
