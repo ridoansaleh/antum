@@ -1,24 +1,25 @@
-const merge = require("webpack-merge");
-const webpack = require("webpack");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const common = require("./webpack.common.js");
+const merge = require('webpack-merge');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const common = require('./webpack.common.js');
 
 const devConfig = {
-  mode: "development",
-  devtool: "eval-source-map",
+  mode: 'development',
+  devtool: 'eval-source-map',
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: '[name].css',
+      chunkFilename: '[id].css',
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
-    contentBase: __dirname + "../dist",
+    contentBase: __dirname + '../dist',
     hot: true,
     historyApiFallback: true,
-    open: true
-  }
+    openPage: 'my-profile',
+    open: true,
+  },
 };
 
 module.exports = merge(common, devConfig);
