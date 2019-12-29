@@ -1,8 +1,6 @@
-# React CSR Template
+# My Profile
 
-React CSR Template is just a very simple Client Side Rendering (CSR) boilerplate that build for personal usage and someone who might be interest to try it.
-
-This project implements a basic configuration of webpack + babel. So, if you are new into Webpack and Babel, you are welcome to contribute here.
+My profile is a profile website of mine that build using React.Js and based on [React CSR Template](https://github.com/ridoansaleh/react-csr-template). This project have deployed in Github Pages in this [link](https://ridoansaleh.github.io/my-profile/). Please check that out and give your best feedback!
 
 ## Installation
 
@@ -20,15 +18,8 @@ This project implements a basic configuration of webpack + babel. So, if you are
 
 4. Wait until your default browser will be opened.
 
-## Contribute
+## History
 
-Everybody are welcome to contribute. But, i think this project will be more suitable for
-beginner in Webpack and Babel (just like me). If you are an expert (know more than us), you are in the right place to make suggestion to improve this project.
+I will make a history version of this project for documentation how far this project has been improved.
 
-Steps to contribute:
-
-1. Fork this repository
-
-2. Create your branch with relevant name
-
-3. Make a Pull Request to master branch
+Coming soon ...
