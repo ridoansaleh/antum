@@ -16,18 +16,13 @@ export const PageWrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  height: 950px;
   width: 100%;
   border-radius: 35px;
   background: white;
   @media only screen and (min-width: ${BREAKPOINTS.PORTRAIT_TABLET}) {
-    width: 80%;
-  }
-  @media only screen and (min-width: ${BREAKPOINTS.TABLET}) {
-    width: 70%;
+    width: 500px;
   }
   @media only screen and (min-width: ${BREAKPOINTS.DESKTOP}) {
     border: 20px solid black;
-    width: 500px;
   }
 `;
