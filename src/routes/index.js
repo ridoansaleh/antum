@@ -1,4 +1,4 @@
-import Home from './home/Home';
+import Home from './new_home';
 import NotFound from './not-found/NotFound';
 
 const routes = [
