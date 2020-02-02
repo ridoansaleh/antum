@@ -8,6 +8,9 @@ export const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (min-width: 768px) {
+    height: 320px;
+  }
 `;
 
 export const Name = styled.h1`
@@ -16,6 +19,10 @@ export const Name = styled.h1`
   color: white;
   margin-bottom: 40px;
   text-transform: uppercase;
+  @media only screen and (min-width: 768px) {
+    font-size: 25px;
+    margin-bottom: 70px;
+  }
 `;
 
 export const PhotoContainer = styled.div`
@@ -28,6 +35,12 @@ export const PhotoContainer = styled.div`
   left: calc((100% - 130px - 30px) / 2);
   background-image: url(${photoImg});
   background-size: 100%;
+  @media only screen and (min-width: 768px) {
+    height: 230px;
+    width: 230px;
+    left: calc((100% - 230px - 30px) / 2);
+    bottom: -115px;
+  }
 `;
 
 export const Job = styled.div`
@@ -35,6 +48,10 @@ export const Job = styled.div`
   text-align: center;
   position: relative;
   top: 70px;
+  @media only screen and (min-width: 768px) {
+    top: 115px;
+    font-size: 20px;
+  }
 `;
 
 export const LinksWrapper = styled.div`
@@ -47,8 +64,9 @@ export const LinksWrapper = styled.div`
     padding: 15px 45px;
   }
   @media only screen and (min-width: 768px) {
-    width: 300px;
+    width: 360px;
     margin: auto;
+    top: 120px;
   }
 `;
 
@@ -57,4 +75,8 @@ export const Link = styled.a`
   font-weight: bold;
   color: #000;
   font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  @media only screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 `;
