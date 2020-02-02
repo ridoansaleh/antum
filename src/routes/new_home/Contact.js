@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { Container, FieldWrapper, Input, Label, TextArea, Button } from './styles/_contactStyle';
+import {
+  Container,
+  Text,
+  FieldWrapper,
+  Input,
+  Label,
+  TextArea,
+  Button,
+} from './styles/_contactStyle';
 
 function Contact() {
   const [email, setEmail] = useState('');
@@ -16,9 +24,14 @@ function Contact() {
   };
   const handleSubmit = e => {
     e.preventDefault();
+    alert('Sorry, this feature is under development');
   };
   return (
     <Container>
+      <Text>
+        You have something to discuss about: idea, job opportunity, collaboration, project etc.
+        Let's send me an email!
+      </Text>
       <form onSubmit={handleSubmit}>
         <FieldWrapper>
           <Label>Email:</Label>

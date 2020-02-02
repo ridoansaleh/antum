@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  min-width: 320px;
+`;
 
 export const Navigation = styled.div`
   position: fixed;
@@ -8,11 +10,17 @@ export const Navigation = styled.div`
   display: flex;
   justify-content: space-between;
   width: calc(100% - 30px);
+  min-width: 320px;
   padding: 15px;
+  @media only screen and (min-width: 768px) {
+    width: 600px;
+    margin-left: calc((100vw - 600px) / 2);
+    padding: 0 0 15px;
+  }
 `;
 
 export const ActiveContent = styled.div`
-  width: 70%;
+  width: calc(100% - 60px - 25px);
   height: 30px;
   font-family: 'Playfair Display', serif;
   background: #ff9c83;
@@ -20,10 +28,17 @@ export const ActiveContent = styled.div`
   line-height: 30px;
   padding: 0 5px;
   border-radius: 3px;
+  @media only screen and (min-width: 768px) {
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-size: 20px;
+  }
 `;
 
 export const Arrow = styled.div`
-  width: 20%;
+  width: 60px;
   height: 30px;
   background: #ff9c83;
   padding: 0 5px;
@@ -33,6 +48,9 @@ export const Arrow = styled.div`
   align-items: center;
   padding: 0 15px;
   box-sizing: border-box;
+  @media only screen and (min-width: 768px) {
+    height: 50px;
+  }
 `;
 
 const ArrowIcon = styled.div`
