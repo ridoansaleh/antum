@@ -10,7 +10,7 @@ export const Navigation = styled.div`
   display: flex;
   justify-content: space-between;
   width: calc(100% - 30px);
-  min-width: 320px;
+  min-width: calc(320px - 30px);
   padding: 15px;
   @media only screen and (min-width: 768px) {
     width: 600px;
