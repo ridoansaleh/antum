@@ -2,10 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   margin: 15px;
+  height: calc(100vh - 70px);
   font-family: 'Playfair Display', serif;
   padding: 10px;
+  @media only screen and (max-height: 695px) {
+    overflow-y: scroll;
+  }
   @media only screen and (min-width: 768px) {
     width: 600px;
+    height: calc(100vh - 90px);
     margin-left: calc((100vw - 600px) / 2);
     padding: 0;
   }

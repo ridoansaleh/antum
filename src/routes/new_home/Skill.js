@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import StarRatingComponent from 'react-star-rating-component';
 import {
   Container,
+  SkillWrapper,
   Item,
   ItemMore,
   Expertise,
@@ -26,8 +27,8 @@ function Skill() {
     });
   };
   return (
-    <>
-      <Container>
+    <Container>
+      <SkillWrapper>
         {SKILLS.map(skill => {
           if (skill.name === 'More') {
             return <ItemMore key={skill.id}>+ More</ItemMore>;
@@ -41,7 +42,7 @@ function Skill() {
             />
           );
         })}
-      </Container>
+      </SkillWrapper>
       <Expertise>
         <h2>Expertise Level</h2>
         <Box>
@@ -52,7 +53,7 @@ function Skill() {
           </BoxLabel>
         </Box>
       </Expertise>
-    </>
+    </Container>
   );
 }
 

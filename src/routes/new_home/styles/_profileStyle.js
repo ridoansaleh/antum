@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import photoImg from '../assets/img-ridoan.png';
 
+export const Container = styled.div`
+  @media only screen and (min-width: 768px) {
+    min-height: 696px;
+  }
+`;
+
 export const Wrapper = styled.section`
   height: 220px;
   background: #ff9c83;

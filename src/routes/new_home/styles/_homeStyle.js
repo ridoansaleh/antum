@@ -27,6 +27,7 @@ export const ActiveContent = styled.div`
   color: white;
   line-height: 30px;
   padding: 0 5px;
+  border: 1px solid #fff;
   border-radius: 3px;
   @media only screen and (min-width: 768px) {
     box-sizing: border-box;
@@ -38,17 +39,19 @@ export const ActiveContent = styled.div`
 `;
 
 export const Arrow = styled.div`
-  width: 60px;
+  width: 30px;
   height: 30px;
   background: #ff9c83;
   padding: 0 5px;
+  border: 1px solid #fff;
   border-radius: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  box-sizing: border-box;
   @media only screen and (min-width: 768px) {
+    box-sizing: border-box;
+    width: 65px;
     height: 50px;
   }
 `;
