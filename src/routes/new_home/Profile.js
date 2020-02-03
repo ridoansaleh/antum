@@ -1,11 +1,19 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
-import { Wrapper, Name, PhotoContainer, Job, LinksWrapper, Link } from './styles/_profileStyle';
+import {
+  Container,
+  Wrapper,
+  Name,
+  PhotoContainer,
+  Job,
+  LinksWrapper,
+  Link,
+} from './styles/_profileStyle';
 
 function Profile() {
   return (
-    <>
+    <Container>
       <Wrapper>
         <Name>Ridoan Saleh Nasution</Name>
         <PhotoContainer />
@@ -22,7 +30,7 @@ function Profile() {
           <FontAwesomeIcon icon={faLink} /> Stackoverflow
         </Link>
       </LinksWrapper>
-    </>
+    </Container>
   );
 }
 

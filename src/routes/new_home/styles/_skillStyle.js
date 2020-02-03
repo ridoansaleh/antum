@@ -1,17 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
+  margin: 15px;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+  @media only screen and (min-width: 768px) {
+    width: 600px;
+    height: calc(100vh - 90px);
+    margin-left: calc((100vw - 600px) / 2);
+  }
+`;
+
+export const SkillWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 15px;
   border: 1px solid #c6c0be;
   padding: 15px 5px;
-  @media only screen and (min-width: 768px) {
-    width: 600px;
-    margin-left: calc((100vw - 600px) / 2);
-    padding: 25px 0;
-  }
 `;
 
 export const Item = styled.img`
@@ -40,13 +45,7 @@ export const ItemMore = styled.div`
   }
 `;
 
-export const Expertise = styled.div`
-  margin: 15px;
-  @media only screen and (min-width: 768px) {
-    width: 600px;
-    margin-left: calc((100vw - 600px) / 2);
-  }
-`;
+export const Expertise = styled.div``;
 
 export const Box = styled.div`
   border: 1px solid #c6c0be;
