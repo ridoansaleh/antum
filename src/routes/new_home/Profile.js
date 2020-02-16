@@ -20,7 +20,7 @@ function Profile() {
       </Wrapper>
       <Job>Web Developer</Job>
       <LinksWrapper>
-        <Link href="https://Link.com/ridoansaleh" target="_blank">
+        <Link href="https://github.com/ridoansaleh" target="_blank">
           <FontAwesomeIcon icon={faLink} /> Github
         </Link>
         <Link href="https://codepen.io/ridoansaleh" target="_blank">
