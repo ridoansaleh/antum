@@ -1,17 +1,25 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import './styles/common.css';
-import routes from './routes';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CoreLayout from "./layout/CoreLayout";
+import Main from "./routes/main";
+import Projects from "./routes/projects";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Switch>
-        {routes.map((route, index) => (
-          <Route key={index} {...route} />
-        ))}
+        <Route path="/my-profile" exact>
+          <CoreLayout>
+            <Main />
+          </CoreLayout>
+        </Route>
+        <Route path="/my-profile/projects">
+          <CoreLayout>
+            <Projects />
+          </CoreLayout>
+        </Route>
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 
