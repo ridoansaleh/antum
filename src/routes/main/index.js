@@ -108,7 +108,7 @@ function Main() {
       <Skills>
         <SkillsTitle>Skills</SkillsTitle>
         <Text>
-          These are the skills that i have acquired along of my journey as a
+          These are the skills that he has acquired along of his journey as a
           Software Engineer.
         </Text>
         {SKILLS.map((skill) => (
