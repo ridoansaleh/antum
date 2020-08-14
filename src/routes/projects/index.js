@@ -51,7 +51,7 @@ function Projects() {
         </Select>
       </Filter>
       <List>
-        <ListTitle>HIS PROJECTS</ListTitle>
+        <ListTitle>PROJECTS</ListTitle>
         {projects.map((project, index) => (
           <ListItem key={project.id}>
             <ProjectName>{index + 1 + ". " + project.name}</ProjectName>
