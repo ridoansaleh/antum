@@ -60,7 +60,7 @@ export const Socials = styled.div`
 `;
 
 export const IconWrapper = styled.div`
-  border: 1px solid #498ae1;
+  border: 1px solid #57595a;
   margin-bottom: 5px;
   padding: 2px 4px;
   box-sizing: border-box;
@@ -72,7 +72,7 @@ export const IconWrapper = styled.div`
 export const Icon = styled.img``;
 
 export const Label = styled.div`
-  line-height: 38px;
+  line-height: 32px;
   margin-left: 10px;
   font-weight: bold;
   opacity: 0.7;
@@ -122,6 +122,40 @@ export const EmailButton = styled(Button)`
 export const WhatsAppButton = styled(Button)`
   width: 100%;
   background-color: #46cf86;
+`;
+
+export const Skills = styled(Section)`
+  margin-top: 23px;
+`;
+
+export const SkillsTitle = styled.div`
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+`;
+
+export const BoxSkill = styled.div`
+  border: 1px solid #57595a;
+  height: 20px;
+  margin-bottom: 20px;
+
+  &:hover {
+    border-color: #f16950;
+
+    > div {
+      background-image: linear-gradient(to right, #f16950, #ecbb79);
+    }
+  }
+`;
+
+export const Load = styled.div`
+  background-image: linear-gradient(to right, #57595a, #acb5b0);
+  width: ${({ level }) => 10 * level + "%"};
+  height: 100%;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 4px;
 `;
 
 export const Works = styled(Section)`
