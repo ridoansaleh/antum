@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   Filter,
@@ -31,6 +32,16 @@ function Projects() {
 
   return (
     <>
+      <Helmet>
+        <link
+          rel="canonical"
+          href="https://ridoansaleh.github.io/my-profile/"
+        />
+        <meta
+          name="description"
+          content="List of opensource projects that build using library / framework like React and Vue. These are side projects of Ridoan Saleh Nasution."
+        />
+      </Helmet>
       <Filter>
         <Label>Filter By:</Label>
         <Select value={filter} onChange={handleFilterChange}>

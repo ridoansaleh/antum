@@ -16,6 +16,10 @@ import {
   ButtonGroup,
   EmailButton,
   WhatsAppButton,
+  Skills,
+  SkillsTitle,
+  BoxSkill,
+  Load,
   Works,
   WorksTitle,
   ProjectButton,
@@ -26,6 +30,7 @@ import profileImg from "./assets/profile.png";
 import linkedInIcon from "./assets/linkedin.png";
 import twitterIcon from "./assets/twitter.png";
 import mediumIcon from "./assets/medium.png";
+import { SKILLS } from "./data";
 
 function Main() {
   const history = useHistory();
@@ -63,7 +68,6 @@ function Main() {
   return (
     <>
       <Helmet>
-        <title>Ridoan Saleh Nasution - Software Engineer</title>
         <link
           rel="canonical"
           href="https://ridoansaleh.github.io/my-profile/"
@@ -101,9 +105,21 @@ function Main() {
           </IconWrapper>
         </Socials>
       </Profile>
+      <Skills>
+        <SkillsTitle>Skills</SkillsTitle>
+        <Text>
+          These are the skills that i have acquired along of my journey as a
+          Software Engineer.
+        </Text>
+        {SKILLS.map((skill) => (
+          <BoxSkill key={skill.id}>
+            <Load level={skill.expertise_level}>{skill.name}</Load>
+          </BoxSkill>
+        ))}
+      </Skills>
       <Contact>
         <Text>
-          Currently, he still working on a company as a Fullstack JavaScript
+          Currently, he is working on a company as a Fullstack JavaScript
           Developer. But, outside of his working hours and at the weekend he
           would love to provides a service to create website for your personal
           or company needs. He always open for other opportunity as well.
@@ -125,7 +141,7 @@ function Main() {
         <Text>
           All of them are his side project that he built while he was learning
           and deepen his knowledge on it. He prefers not to include projects
-          that he had work in his current or previous companies.
+          that he had work from his current or previous companies.
         </Text>
         <ProjectButton onClick={handleSeeProjectsClick}>
           See Projects
